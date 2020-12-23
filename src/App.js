@@ -1,22 +1,22 @@
 
-import { Link, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import './App.scss';
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import ForUs from './pages/ForUs';
+import About from './pages/About';
 import Contacts from './pages/Contacts';
-
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
     <div className="app">
-      <Link to="/" > Начало </Link>
-      <Link to="/for-us" > За нас </Link>
-      <Link to="/contacts" > Контакти </Link>
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/for-us" component={ForUs} />
+        <Route path="/about" component={About} />
         <Route path="/contacts" component={Contacts} />
+        <Route component={NotFound} />
       </Switch>
     </div>
   );
