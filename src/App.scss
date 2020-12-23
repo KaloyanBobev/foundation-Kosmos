@@ -1,3 +1,24 @@
-.app {
+/*Navbar*/
+.navbar {
+    top: 0;
+    left: 0;
     background-color: lightblue;
+    padding: 0.5rem 2rem;
+    .logo {
+        font-size: 1.5rem;
+        padding: 2px;
+        margin: 1rem;
+        font-style: italic;
+        border: 1px solid black;
+        color: lightgoldenrodyellow;
+        text-shadow: 0px 7px 5px black;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
 }
+
+/*End Navbar*/
