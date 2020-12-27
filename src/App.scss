@@ -1,24 +1,85 @@
-/*Navbar*/
-.navbar {
-    top: 0;
-    left: 0;
-    background-color: lightblue;
-    padding: 0.5rem 2rem;
-    .logo {
-        font-size: 1.5rem;
-        padding: 2px;
-        margin: 1rem;
-        font-style: italic;
-        border: 1px solid black;
-        color: lightgoldenrodyellow;
-        text-shadow: 0px 7px 5px black;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-        font-weight: 900;
-        font-size: 1.2rem;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+$primaryColor: #af9a7d;
+$mainWhite: #fff;
+$offWhite: #f7f7f7;
+$mainBlack: #222;
+$mainGrey: #ececec;
+$darkGrey: #cfcfcf;
+$mainTransition: all 0.3s linear;
+$mainSpacing: 3px;
+$lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+$darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+
+/*Navbar*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.75rem 2rem;
+    background: var($offWhite);
+    z-index: 1;
+}
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.nav-icon {
+    font-size: 1.5rem;
+    color: var($primaryColor);
+}
+.nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: var($mainTransition);
+    list-style-type: none;
+}
+.nav-links a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0;
+    color: var($mainBlack);
+    transition: var($mainTransition);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: var($mainSpacing);
+}
+.nav-links a:hover {
+    color: var($primaryColor);
+}
+
+.show-nav {
+    height: 100px;
+}
+@media screen and (min-width: 768px) {
+    .nav-btn {
+        display: none;
+    }
+    .nav-center {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .nav-links {
+        height: auto;
+        display: flex;
+        margin-left: 4rem;
+    }
+    .nav-links a {
+        margin: 0 1rem;
+        padding: 0.5rem 0;
+    }
+}
 /*End Navbar*/
