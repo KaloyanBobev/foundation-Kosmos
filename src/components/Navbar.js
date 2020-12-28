@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
+import logo from "../images/logo.png";
 import { Link } from 'react-router-dom';
 import { FaAlignRight } from 'react-icons/fa';
 export default class Navbar extends Component {
@@ -7,7 +9,7 @@ export default class Navbar extends Component {
         isOpen: false
     }
 
-    handleToggle = () => {
+    hadleToggle = () => {
         this.setState({
             isOpen: !this.state.isOpen
         })
@@ -19,7 +21,9 @@ export default class Navbar extends Component {
             <nav className="navbar">
                 <div className="nav-center">
                     <div className="nav-header">
-                        <Link to="/" className="logo">Ф о н д а ц и я    К о с м о с</Link>
+                        <Link to="/" >
+                            <img src={logo} alt="logo fondation Cosmos" />
+                        </Link>
                         <button type="button" className="nav-btn">
                             <FaAlignRight
                                 className="nav-icon"
