@@ -15,6 +15,47 @@ $mainSpacing: 3px;
 $lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
 $darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 
+body {
+    padding-top: 66px;
+    color: $mainBlack;
+    background: $mainWhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
+}
+
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: $mainSpacing;
+    color: $mainBlack;
+    background: $primaryColor;
+    padding: 0.4rem 0.9rem;
+    border: 3px solid $primaryColor;
+    transition: $mainTransition;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    background: transparent;
+    color: $primaryColor;
+}
+.loading {
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 3rem;
+}
+.error {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+.empty-search {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 2rem 0;
+    padding: 1rem;
+    letter-spacing: $mainSpacing;
+}
 /*Navbar*/
 .navbar {
     position: fixed;
@@ -22,7 +63,7 @@ $darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
     left: 0;
     width: 100%;
     padding: 0.75rem 2rem;
-    background: var($offWhite);
+    background: $offWhite;
     z-index: 1;
 }
 .nav-header {
@@ -37,31 +78,31 @@ $darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .nav-icon {
     font-size: 1.5rem;
-    color: var($primaryColor);
+    color: $primaryColor;
 }
 .nav-links {
     height: 0;
     overflow: hidden;
-    transition: var($mainTransition);
+    transition: $mainTransition;
     list-style-type: none;
 }
 .nav-links a {
     display: block;
     text-decoration: none;
     padding: 1rem 0;
-    color: var($mainBlack);
-    transition: var($mainTransition);
+    color: $mainBlack;
+    transition: $mainTransition;
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
-    letter-spacing: var($mainSpacing);
+    letter-spacing: $mainSpacing;
 }
 .nav-links a:hover {
-    color: var($primaryColor);
+    color: $primaryColor;
 }
 
 .show-nav {
-    height: 100px;
+    height: auto;
 }
 @media screen and (min-width: 768px) {
     .nav-btn {
