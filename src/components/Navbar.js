@@ -37,6 +37,9 @@ export default class Navbar extends Component {
                             <Link to="/" > Начало </Link>
                         </li>
                         <li>
+                            <Link to="/gallery" > Фото галерия </Link>
+                        </li>
+                        <li>
                             <Link to="/about" > За нас </Link>
                         </li>
                         <li>
