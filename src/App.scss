@@ -125,3 +125,23 @@ body {
     }
 }
 /*End Navbar*/
+/*Hero*/
+.defaultHero {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    display: flex;
+    background-image: url("./images/Cosmos-hero-1.jpg") center/cover no-repeat;
+}
+/*End Hero*/
+/*Hero*/
+.banner {
+    display: inline-block;
+    color: $mainWhite;
+    padding: 2rem 1rem;
+
+    h1 {
+        color: red;
+    }
+}
+/*End Hero*/
