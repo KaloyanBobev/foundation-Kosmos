@@ -1,17 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+export default function Hero({ hero, children }) {
 
+    return (
+        <header className={hero || "defaultHero"}>
+            {children}
+        </header>
+    )
 
-export default class Hero extends Component {
-    constructor({ image }) {
-        super();
-    }
-    render() {
-        return (
-            <div>
-                <img src={props.image} alt="cosmos" />
-                <h1>Text</h1>
-            </div>
-        )
-    }
 }
