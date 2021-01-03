@@ -37,6 +37,12 @@ export default class Navbar extends Component {
                             <Link to="/" > Начало </Link>
                         </li>
                         <li>
+                            <Link to="/books" > Книги </Link>
+                        </li>
+                        <li>
+                            <Link to="/poets" > Дружество на писателите </Link>
+                        </li>
+                        <li>
                             <Link to="/gallery" > Фото галерия </Link>
                         </li>
                         <li>
