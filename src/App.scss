@@ -19,7 +19,7 @@ body {
     padding-top: 66px;
     color: $mainBlack;
     background: $mainWhite;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     line-height: 1.4;
 }
 
@@ -105,13 +105,13 @@ body {
 .show-nav {
     height: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1068px) {
     .nav-btn {
         display: none;
     }
     .nav-center {
         max-width: 1170px;
-        margin: 0 auto;
+        margin: 0;
         display: flex;
     }
     .nav-links {
@@ -127,5 +127,25 @@ body {
 /*End Navbar*/
 
 /*Banner*/
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25rem;
+    background-image: url("./images/Cosmos-hero-1.jpg");
+    opacity: 0.9;
+    color: $mainWhite;
+    .banner-center {
+        padding: 10rem 20rem;
+        .banner-text {
+            padding: 2rem;
+            text-align: center;
+            border: 3px solid $mainWhite;
+            background-color: $lightShadow;
+            letter-spacing: $mainSpacing;
+        }
+    }
+}
 
 /*End Banner*/
