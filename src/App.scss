@@ -158,8 +158,9 @@ body {
 
 /*End Banner*/
 
-/*Books*/
-.books-container {
+/*Books and Home*/
+.books-container,
+.home-container {
     width: 80%;
     margin: 5rem 5rem;
     display: flex;
@@ -180,4 +181,4 @@ body {
     }
 }
 
-/*End Books*/
+/*End Books home*/
