@@ -28,16 +28,16 @@ body {
     text-decoration: none;
     letter-spacing: $mainSpacing;
     color: $mainBlack;
-    background: $primaryColor;
+    background: $mainWhite;
     padding: 0.4rem 0.9rem;
-    border: 3px solid $primaryColor;
+    border: 3px solid $mainWhite;
     transition: $mainTransition;
     text-transform: uppercase;
     cursor: pointer;
 }
 .btn-primary:hover {
     background: transparent;
-    color: $primaryColor;
+    color: $mainWhite;
 }
 .loading {
     text-transform: capitalize;
@@ -56,7 +56,9 @@ body {
     padding: 1rem;
     letter-spacing: $mainSpacing;
 }
+
 /*Navbar*/
+
 .navbar {
     position: fixed;
     top: 0;
@@ -124,9 +126,11 @@ body {
         padding: 0.5rem 0;
     }
 }
+
 /*End Navbar*/
 
 /*Banner*/
+
 .banner-container {
     display: flex;
     justify-content: center;
@@ -138,14 +142,42 @@ body {
     color: $mainWhite;
     .banner-center {
         padding: 10rem 20rem;
+
         .banner-text {
             padding: 2rem;
             text-align: center;
             border: 3px solid $mainWhite;
             background-color: $lightShadow;
             letter-spacing: $mainSpacing;
+            .btn-primary {
+                margin-top: 1rem;
+            }
         }
     }
 }
 
 /*End Banner*/
+
+/*Books*/
+.books-container {
+    width: 80%;
+    margin: 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    font-size: 1.5rem;
+
+    p {
+        text-indent: 2em;
+    }
+    h1 {
+        margin: 1rem 4rem;
+        font-size: 2.8rem;
+    }
+    poem,
+    p {
+        margin: 1rem;
+    }
+}
+
+/*End Books*/
