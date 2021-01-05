@@ -162,7 +162,7 @@ body {
 .books-container,
 .home-container {
     width: 80%;
-    margin: 5rem 5rem;
+    margin: 5rem 5rem 0 5rem;
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -181,5 +181,22 @@ body {
         list-style: none;
     }
 }
+.home-container {
+    height: 400px;
 
+    overflow: hidden;
+    border: 1px solid black;
+}
+.btn {
+    margin-left: 75%;
+    font-weight: 900;
+    margin-bottom: 5rem;
+    outline: none;
+    &:hover {
+        color: gray;
+    }
+}
+.show {
+    height: auto;
+}
 /*End Books home*/
