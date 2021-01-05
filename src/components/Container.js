@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function HomeContainer({ data }) {
+export default function Container({ data }) {
     return (
         <>
             {data.map((item) => {
