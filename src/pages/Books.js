@@ -20,7 +20,6 @@ export default class Books extends Component {
     }
 
     handleToggle() {
-
         this.setState({
             visible: !this.state.visible
         })
@@ -29,11 +28,11 @@ export default class Books extends Component {
     render() {
         return (
             <>
-                <section className={this.state.visible ? "books-container" : "books-container show"}>
+                <section className={this.state.visible ? "container" : "container show"}>
                     <h1>Димитър Брацов препуска със свещения дар на спомените</h1>
                     <Container data={this.state.data} />
                 </section>
-                <button className="btn-primary btn" onClick={this.handleToggle}>Покажи</button>
+                <button className="btn-primary btn" onClick={this.handleToggle}>{this.state.visible ? "Покажи" : "Скрии"}</button>
             </>
         )
     }
