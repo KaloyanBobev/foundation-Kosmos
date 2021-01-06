@@ -1,11 +1,28 @@
 import React, { Component } from 'react'
+import img1 from '../images/cosmos/130450932_110225667612487_2397097314206639749_o.jpg';
+import img2 from '../images/cosmos/Dimitar-Bracov.jpg';
+import img3 from '../images/cosmos/hristo-tanev-01-07-16-4.jpg';
+import img4 from '../images/cosmos/Jordan-Atanasov1.jpg';
+import img5 from '../images/cosmos/korica-ptici-v-noshta1-190x122.jpg';
+import img6 from '../images/cosmos/Liliev-konkurs-05-25-15-190x122.jpg';
+import img7 from '../images/cosmos/uchrediteli-klub-Kosmos-23-13.jpg';
+
 
 export default class Gallery extends Component {
     render() {
         return (
-            <div>
-                Gallery
-            </div>
+            <section className="image-container">
+
+
+                <img src={img4} alt="cosmos" />
+                <img src={img2} alt="cosmos" />
+                <img src={img5} alt="cosmos" />
+                <img src={img6} alt="cosmos" />
+                <img src={img3} alt="cosmos" />
+                <img src={img7} alt="cosmos" />
+                <img src={img1} alt="cosmos" />
+
+            </section>
         )
     }
 }
