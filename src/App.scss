@@ -133,15 +133,16 @@ body {
 
 .banner-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 25rem;
     background-image: url("./images/Cosmos-hero-1.jpg");
-    opacity: 0.9;
+    opacity: 0.8;
     color: $mainWhite;
     .banner-center {
-        padding: 10rem 20rem;
+        padding: 5rem 2rem;
 
         .banner-text {
             padding: 2rem;
@@ -149,18 +150,23 @@ body {
             border: 3px solid $mainWhite;
             background-color: $lightShadow;
             letter-spacing: $mainSpacing;
+            box-shadow: 0px 0px 20px $mainWhite;
             .btn-primary {
                 margin-top: 1rem;
             }
         }
+    }
+
+    img {
+        width: 19rem;
+        box-shadow: 0px 0px 20px $mainWhite;
     }
 }
 
 /*End Banner*/
 
 /*Books and Home*/
-.books-container,
-.home-container {
+.container {
     width: 80%;
     height: 400px;
     overflow: hidden;
@@ -177,7 +183,7 @@ body {
         margin: 1rem 4rem;
         font-size: 2.8rem;
     }
-    ul,
+
     p {
         margin: 1rem;
         list-style: none;
@@ -190,7 +196,7 @@ body {
     margin-bottom: 5rem;
     outline: none;
     &:hover {
-        color: gray;
+        color: $darkGrey;
     }
 }
 
@@ -199,3 +205,28 @@ body {
 }
 
 /*End Books home*/
+
+/*Gallery*/
+.image-container {
+    flex-wrap: wrap;
+    img {
+        margin: 5rem;
+        width: 20rem;
+        border: 5px solid darkGrey;
+        border-radius: 15px 15px;
+        box-shadow: 3px 3px 3px $mainBlack;
+
+        &:hover {
+            opacity: 0.7;
+            box-shadow: 5px 5px 5px $mainBlack;
+        }
+    }
+}
+/*End Gallery*/
+
+/*Contacts*/
+.contacts-container {
+    font-size: 3rem;
+    margin: 5rem 15rem;
+}
+/*End Contacts*/
