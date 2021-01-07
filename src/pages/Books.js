@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import booksData from '../data/booksData';
 import Container from '../components/Container';
+import ToggleBtn from '../components/ToggleBtn';
 
 export default class Books extends Component {
     constructor() {
@@ -32,7 +33,10 @@ export default class Books extends Component {
                     <h1>Димитър Брацов препуска със свещения дар на спомените</h1>
                     <Container data={this.state.data} />
                 </section>
-                <button className="btn-primary btn" onClick={this.handleToggle}>{this.state.visible ? "Покажи" : "Скрии"}</button>
+                <ToggleBtn
+                    handleToggle={this.handleToggle}
+                    visible={this.state.visible}
+                />
             </>
         )
     }
