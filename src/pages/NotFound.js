@@ -8,7 +8,7 @@ export default function NotFound() {
         <section className="not-found">
             <h1>Whoops! </h1>
             <h3>404 Page Not Found</h3>
-            <p>Looks like this page is lost in open cosmos</p>
+            <p>Look like this page lost in open cosmos</p>
             <img src={img} alt="not found" />
             <p>Try our <Link to="/" >homepage</Link> to back to planet Earth</p>
         </section>
