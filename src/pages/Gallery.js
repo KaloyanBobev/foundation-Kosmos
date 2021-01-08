@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import { Link } from 'react-router-dom';
 import img1 from '../images/cosmos/130450932_110225667612487_2397097314206639749_o.jpg';
 import img2 from '../images/cosmos/Dimitar-Bracov.jpg';
 import img3 from '../images/cosmos/hristo-tanev-01-07-16-4.jpg';
