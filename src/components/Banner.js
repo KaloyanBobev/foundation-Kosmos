@@ -15,7 +15,8 @@ export default class Banner extends Component {
                         </div>
 
                     </div>
-                    <img src={img} alt="first page" />
+                    <Link to="/books" > <img src={img} alt="first page" /></Link>
+
                 </div>
 
             </>
