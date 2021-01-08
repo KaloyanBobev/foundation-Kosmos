@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
+import { Link } from 'react-router-dom';
 import img1 from '../images/cosmos/130450932_110225667612487_2397097314206639749_o.jpg';
 import img2 from '../images/cosmos/Dimitar-Bracov.jpg';
 import img3 from '../images/cosmos/hristo-tanev-01-07-16-4.jpg';
@@ -13,14 +15,15 @@ export default class Gallery extends Component {
         return (
             <section className="image-container">
 
+                <a href={img4}><img src={img4} alt="cosmos" /></a>
+                <a href={img2}><img src={img2} alt="cosmos" /></a>
+                <a href={img5}><img src={img5} alt="cosmos" /></a>
+                <a href={img6}><img src={img6} alt="cosmos" /></a>
+                <a href={img3}><img src={img3} alt="cosmos" /></a>
+                <a href={img7}><img src={img7} alt="cosmos" /></a>
+                <a href={img1}><img src={img1} alt="cosmos" /></a>
 
-                <img src={img4} alt="cosmos" />
-                <img src={img2} alt="cosmos" />
-                <img src={img5} alt="cosmos" />
-                <img src={img6} alt="cosmos" />
-                <img src={img3} alt="cosmos" />
-                <img src={img7} alt="cosmos" />
-                <img src={img1} alt="cosmos" />
+
 
             </section>
         )
