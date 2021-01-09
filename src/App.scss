@@ -243,3 +243,39 @@ body {
 }
 
 /*End Not Found*/
+
+/*Poets*/
+
+.poets-container {
+    margin: 5rem 0;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    .image-container {
+        width: 30rem;
+
+        display: inline-block;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            border: 5px solid darkGrey;
+            border-radius: 15px 15px;
+            box-shadow: 3px 3px 3px $mainBlack;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.7;
+                box-shadow: 5px 5px 5px $mainBlack;
+            }
+        }
+    }
+    .facebook-link {
+        text-decoration: none;
+        color: $primaryColor;
+        &:hover {
+            color: $darkGrey;
+        }
+    }
+}
+/*End Poets*/
