@@ -199,6 +199,13 @@ body {
 /*Gallery*/
 .image-container {
     flex-wrap: wrap;
+    margin:5rem;
+     text-align:center;
+    h1 {
+        margin: 1rem 4rem;
+        font-size: 2.8rem;
+       
+    }
     img {
         margin: 5rem 5rem 5rem 2rem;
         width: 20rem;
@@ -247,12 +254,15 @@ body {
 /*Poets*/
 
 .poets-container {
-    margin: 5rem 0;
-    font-size: 2rem;
+     margin: 5rem 0;
+  
     text-align: center;
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
+     h1{
+        font-size: 2.8rem;
+    }
     .image-container {
         width: 30rem;
 
@@ -273,6 +283,7 @@ body {
     .facebook-link {
         text-decoration: none;
         color: $primaryColor;
+         font-size: 2rem;
         &:hover {
             color: $darkGrey;
         }
