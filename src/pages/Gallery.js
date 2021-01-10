@@ -13,7 +13,7 @@ export default class Gallery extends Component {
     render() {
         return (
             <section className="image-container">
-
+<h1>Фото галерия</h1>
                 <a href={img4}><img src={img4} alt="cosmos" /></a>
                 <a href={img2}><img src={img2} alt="cosmos" /></a>
                 <a href={img5}><img src={img5} alt="cosmos" /></a>
