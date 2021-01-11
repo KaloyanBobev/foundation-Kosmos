@@ -13,14 +13,20 @@ export default class Gallery extends Component {
     render() {
         return (
             <section className="image-container">
-<h1>Фото галерия</h1>
-                <a href={img4}><img src={img4} alt="cosmos" /></a>
-                <a href={img2}><img src={img2} alt="cosmos" /></a>
-                <a href={img5}><img src={img5} alt="cosmos" /></a>
-                <a href={img6}><img src={img6} alt="cosmos" /></a>
-                <a href={img3}><img src={img3} alt="cosmos" /></a>
-                <a href={img7}><img src={img7} alt="cosmos" /></a>
-                <a href={img1}><img src={img1} alt="cosmos" /></a>
+                <h1>Фото галерия</h1>
+                <a href={img4}
+                    target="_blank">
+                    <img src={img4} alt="cosmos" />
+                </a>
+                <a href={img2}
+                    target="_blank">
+                    <img src={img2} alt="cosmos" />
+                </a>
+                <a href={img5} target="_blank"><img src={img5} alt="cosmos" /></a>
+                <a href={img6} target="_blank"><img src={img6} alt="cosmos" /></a>
+                <a href={img3} target="_blank"><img src={img3} alt="cosmos" /></a>
+                <a href={img7} target="_blank"><img src={img7} alt="cosmos" /></a>
+                <a href={img1} target="_blank"><img src={img1} alt="cosmos" /></a>
 
 
 
