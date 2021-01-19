@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+$width: 1400px;
 $primaryColor: #af9a7d;
 $mainWhite: #fff;
 $offWhite: #f7f7f7;
@@ -16,6 +17,7 @@ $lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
 $darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 
 body {
+    max-width: $width;
     padding-top: 66px;
     color: $mainBlack;
     background: $mainWhite;
@@ -23,7 +25,7 @@ body {
     line-height: 1.4;
 }
 .app {
-    width: auto;
+    border: 1px solid red;
 }
 .btn-primary {
     display: inline-block;
@@ -48,7 +50,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: $width;
     padding: 0.75rem 2rem;
     background: $offWhite;
     z-index: 1;
