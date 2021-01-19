@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-$width: 1400px;
+$mediawidth: 1068px;
+$width: auto;
 $primaryColor: #af9a7d;
 $mainWhite: #fff;
 $offWhite: #f7f7f7;
@@ -18,11 +18,13 @@ $darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 
 body {
     max-width: $width;
-    padding-top: 66px;
+
     color: $mainBlack;
     background: $mainWhite;
+
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    line-height: 1.4;
+
+    line-height: 1.2;
 }
 .app {
     border: 1px solid red;
@@ -50,10 +52,11 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: $width;
+    width: 100%;
     padding: 0.75rem 2rem;
     background: $offWhite;
     z-index: 1;
+    font-size: 10px;
 }
 .nav-header {
     display: flex;
@@ -94,12 +97,15 @@ body {
 .show-nav {
     height: auto;
 }
-@media screen and (min-width: 1068px) {
+@media screen and (min-width: $mediawidth) {
+    .navbar {
+        position: fixed;
+        width: auto;
+    }
     .nav-btn {
         display: none;
     }
     .nav-center {
-        max-width: 1170px;
         margin: 0;
         display: flex;
     }
@@ -149,7 +155,7 @@ body {
         border-radius: 5px 5px;
         box-shadow: 0px 0px 20px $mainWhite;
     }
-    @media screen and (max-width: 1068px) {
+    @media screen and (max-width: $mediawidth) {
         .banner-center {
             display: none;
         }
@@ -167,14 +173,14 @@ body {
     display: flex;
     flex-direction: column;
     align-content: space-around;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 
     p {
         text-indent: 2em;
     }
     h1 {
         margin: 1rem 4rem;
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     p {
@@ -197,7 +203,14 @@ body {
 .show {
     height: auto;
 }
-
+@media screen and(min-width:$mediawidth) {
+    .container {
+        font-size: 1.5rem;
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+}
 /*End Books home*/
 
 /*Gallery*/
