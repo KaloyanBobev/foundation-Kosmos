@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 $mediawidth: 1068px;
 $width: auto;
 $primaryColor: #af9a7d;
@@ -17,18 +18,14 @@ $lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
 $darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 
 body {
+    padding-top: 100px;
     max-width: $width;
-
     color: $mainBlack;
     background: $mainWhite;
-
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-
     line-height: 1.2;
 }
-.app {
-    border: 1px solid red;
-}
+
 .btn-primary {
     display: inline-block;
     text-decoration: none;
@@ -41,6 +38,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
 }
+
 .btn-primary:hover {
     background: transparent;
     color: $mainWhite;
@@ -58,26 +56,31 @@ body {
     z-index: 1;
     font-size: 10px;
 }
+
 .nav-header {
     display: flex;
     justify-content: space-between;
 }
+
 .nav-btn {
     background: transparent;
     border: none;
     cursor: pointer;
     outline: none;
 }
+
 .nav-icon {
     font-size: 1.5rem;
     color: $primaryColor;
 }
+
 .nav-links {
     height: 0;
     overflow: hidden;
     transition: $mainTransition;
     list-style-type: none;
 }
+
 .nav-links a {
     display: block;
     text-decoration: none;
@@ -90,6 +93,7 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     letter-spacing: $mainSpacing;
 }
+
 .nav-links a:hover {
     color: $primaryColor;
 }
@@ -165,6 +169,7 @@ body {
 /*End Banner*/
 
 /*Books and Home*/
+
 .container {
     width: 80%;
     height: 400px;
@@ -178,6 +183,7 @@ body {
     p {
         text-indent: 2em;
     }
+
     h1 {
         margin: 1rem 4rem;
         font-size: 2.2rem;
@@ -203,6 +209,7 @@ body {
 .show {
     height: auto;
 }
+
 @media screen and(min-width:$mediawidth) {
     .container {
         font-size: 1.5rem;
@@ -211,20 +218,22 @@ body {
         }
     }
 }
+
 /*End Books home*/
 
 /*Gallery*/
 .image-container {
     flex-wrap: wrap;
-    margin: 5rem;
+    margin: 1rem 5rem;
 
     h1 {
         margin: 1rem 4rem;
-        font-size: 2.8rem;
+        font-size: 1.5rem;
     }
     img {
-        margin: 5rem 5rem 5rem 2rem;
-        width: 20rem;
+        margin: 2rem 2rem 2rem 1rem;
+        padding: auto;
+        width: 15rem;
         border: 5px solid darkGrey;
         border-radius: 15px 15px;
         box-shadow: 3px 3px 3px $mainBlack;
@@ -232,6 +241,19 @@ body {
         &:hover {
             opacity: 0.7;
             box-shadow: 5px 5px 5px $mainBlack;
+        }
+    }
+}
+
+@media screen and(min-width:$mediawidth) {
+    .image-container {
+        font-size: 1.5rem;
+        h1 {
+            font-size: 2.5rem;
+        }
+        img {
+            margin: 5rem 5rem 5rem 2rem;
+            width: 20rem;
         }
     }
 }
@@ -271,17 +293,15 @@ body {
 
 .poets-container {
     margin: 5rem 0;
-
     text-align: center;
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
     h1 {
-        font-size: 2.8rem;
+        font-size: 1.5rem;
     }
     .image-container {
-        width: 30rem;
-
+        width: 20rem;
         display: inline-block;
         margin: 0 auto;
         img {
@@ -300,9 +320,24 @@ body {
     .facebook-link {
         text-decoration: none;
         color: $primaryColor;
-        font-size: 2rem;
+        font-size: 1rem;
         &:hover {
             color: $darkGrey;
+        }
+    }
+}
+
+@media screen and(min-width:$mediawidth) {
+    .poets-container {
+        font-size: 1.5rem;
+        h1 {
+            font-size: 2.5rem;
+        }
+        .image-container {
+            width: 15rem;
+        }
+        .facebook-link {
+            font-size: 2rem;
         }
     }
 }
