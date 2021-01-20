@@ -84,11 +84,11 @@ body {
 .nav-links a {
     display: block;
     text-decoration: none;
-    padding: 1rem 0;
+    padding: 0.5em 0;
     color: $mainBlack;
     transition: $mainTransition;
-    text-align: center;
-    font-size: 1.4rem;
+    text-align: left;
+    font-size: 1.2rem;
     font-weight: bolder;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     letter-spacing: $mainSpacing;
@@ -101,16 +101,17 @@ body {
 .show-nav {
     height: auto;
 }
+
 @media screen and (min-width: $mediawidth) {
     .navbar {
         position: fixed;
-        width: auto;
+        width: 100%;
     }
     .nav-btn {
         display: none;
     }
     .nav-center {
-        margin: 0;
+        margin: auto;
         display: flex;
     }
     .nav-links {
@@ -164,6 +165,7 @@ body {
         height: 14rem;
         box-shadow: 0px 0px 20px $mainWhite;
     }
+
     @media screen and (max-width: $mediawidth) {
         .banner-center {
             display: none;
@@ -176,35 +178,31 @@ body {
 /*Books and Home*/
 
 .container {
-    width: 80%;
+    width: auto;
     height: 400px;
     overflow: hidden;
-    margin: 5rem 5rem 0 2rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-content: space-around;
     font-size: 1.1rem;
-    text-align: justify;
-
-    p {
-        text-indent: 2em;
-    }
 
     h1 {
         margin: 1rem 4rem;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
     }
 
     p {
         margin: 1rem;
         list-style: none;
+        text-indent: 2em;
+        text-align: justify;
     }
 }
 
 .btn {
     font-weight: 900;
-
-    padding: 2rem 5rem;
+    padding: 2rem auto;
     color: $primaryColor;
     outline: none;
     &:hover {
@@ -220,7 +218,7 @@ body {
     .container {
         font-size: 1.5rem;
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
     }
 }
@@ -230,7 +228,7 @@ body {
 /*Gallery*/
 .image-container {
     flex-wrap: wrap;
-    margin: 1rem 5rem;
+    margin: 1rem 4rem;
 
     h1 {
         margin: 1rem 4rem;
@@ -255,7 +253,7 @@ body {
     .image-container {
         font-size: 1.5rem;
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         img {
             margin: 5rem 5rem 5rem 2rem;
@@ -287,6 +285,7 @@ body {
     h1 {
         margin: 2rem 0;
         color: $primaryColor;
+        font-size: 1.5rem;
     }
     img {
         width: 25rem;
@@ -337,7 +336,7 @@ body {
     .poets-container {
         font-size: 1.5rem;
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         .image-container {
             width: 30rem;
@@ -352,11 +351,11 @@ body {
 /*Footer*/
 .footer-container {
     margin-top: 5rem;
-    padding: 3rem 0 1rem 0;
+    padding: 1rem 0;
     background: $offWhite;
     h4 {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .social-container {
         text-align: center;
