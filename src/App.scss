@@ -202,9 +202,9 @@ body {
 }
 
 .btn {
-    margin-left: 75%;
     font-weight: 900;
-    margin-bottom: 5rem;
+
+    padding: 2rem 5rem;
     color: $primaryColor;
     outline: none;
     &:hover {
@@ -269,8 +269,8 @@ body {
 /*Contacts*/
 
 .contacts-container {
-    font-size: 3rem;
-    margin: 5rem 15rem;
+    font-size: 1.5rem;
+    margin: 3rem;
 }
 
 /*End Contacts*/
