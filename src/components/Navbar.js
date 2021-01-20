@@ -13,8 +13,8 @@ export default class Navbar extends Component {
         this.setState({
             isOpen: !this.state.isOpen
         })
-        console.log(this.state.isOpen);
     }
+
 
     render() {
         return (
@@ -30,7 +30,7 @@ export default class Navbar extends Component {
                                 onClick={this.hadleToggle} />
                         </button>
                     </div>
-                    <ul className={this.state.isOpen
+                    <ul onClick={this.hadleToggle} className={this.state.isOpen
                         ? "nav-links show-nav"
                         : "nav-links"}>
                         <li>
