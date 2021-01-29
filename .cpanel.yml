@@ -1,0 +1,6 @@
+---
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/kaloyanb/old.literaturenglas.com
+        - /bin/cp index $DEPLOYPATH   
+        - /bin/cp favicon $DEPLOYPATH 
