@@ -2,5 +2,5 @@
 deployment:
       tasks:
         - export DEPLOYPATH=/home/kaloyanb/old.literaturenglas.com
-        - /bin/cp package.json $DEPLOYPATH   
+        - /bin/cp -R * $DEPLOYPATH   
         
