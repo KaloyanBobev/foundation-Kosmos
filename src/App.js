@@ -1,6 +1,6 @@
 
 import { Route, Switch } from 'react-router-dom';
-import CookieConsent from "react-cookie-consent";
+import CookieConsent, { Cookies } from "react-cookie-consent";
 import './App.scss';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
@@ -12,8 +12,11 @@ import Contacts from './pages/Contacts';
 import NotFound from './pages/NotFound';
 import Gallery from './pages/Gallery';
 import Footer from './components/Footer';
+import CookiePolicy from './pages/cookiePolicy.js';
+import { Link } from 'react-router-dom';
 
 function App() {
+  Cookies.set("test", "nice");
   return (
     <div className="app">
       <Navbar />
@@ -25,19 +28,25 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/contacts" component={Contacts} />
+        <Route path="/cookie" component={CookiePolicy} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
       <CookieConsent
-        location="top"
-        buttonText="Sure man!!"
-        cookieName="myAwesomeCookieName2"
-        style={{ background: "#2B373B" }}
-        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-        expires={150}
+        onAccept={() => {
+
+        }}
+        debug={true}
+        enableDeclineButton
+        declineButtonText="Откажи(optional)"
+        onDecline={() => {
+          alert("не!");
+        }}
       >
-        This website uses cookies to enhance the user experience.{" "}
-        <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
+        This website uses cookies to enhance the user experience.<Link to="/cookie">Cookie Policy</Link>{" "}
+        <span style={{ fontSize: "10px" }}>
+
+        </span>
       </CookieConsent>
     </div>
   );
