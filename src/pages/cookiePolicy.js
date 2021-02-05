@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function cookiePolicy() {
     return (
-        <>
+        <article className="cookie-policy">
             <h1>Cookies Policy</h1>
             <p>Last updated: February 04, 2021</p>
             <p>This Cookies Policy explains what Cookies are and how We use them. You should read this policy so You can understand
@@ -25,7 +25,7 @@ export default function cookiePolicy() {
                 <li><strong>Cookies</strong> means small files that are placed on Your computer, mobile device or any other device
         by a website, containing details of your browsing history on that website among its many uses.</li>
                 <li><strong>Website</strong> refers to фондация Космос, accessible from <a href="https://fondaciakosmosdb.com"
-                    rel="external nofollow noopener" rel="noreferrer">https://fondaciakosmosdb.com</a></li>
+                    rel="external nofollow noopener noreferrer">https://fondaciakosmosdb.com</a></li>
                 <li><strong>You</strong> means the individual accessing or using the Website, or a company, or any legal entity on
         behalf of which such individual is accessing or using the Website, as applicable.</li>
             </ul>
@@ -64,26 +64,25 @@ export default function cookiePolicy() {
     of your web browser.</p>
             <ul>
                 <li>
-                    <p>For the Chrome web browser, please visit this page from Google: <a
-                        href="https://support.google.com/accounts/answer/32050" rel="external nofollow noopener"
-                        rel="noreferrer">https://support.google.com/accounts/answer/32050</a></p>
+                    <p>For the Chrome web browser, please visit this page from Google:
+                     <a
+                            href="https://support.google.com/accounts/answer/32050" rel="external nofollow noopener"
+                        >https://support.google.com/accounts/answer/32050</a>
+                    </p>
                 </li>
                 <li>
                     <p>For the Internet Explorer web browser, please visit this page from Microsoft: <a
-                        href="http://support.microsoft.com/kb/278835" rel="external nofollow noopener"
-                        rel="noreferrer">http://support.microsoft.com/kb/278835</a></p>
+                        href="http://support.microsoft.com/kb/278835" rel="external nofollow noopener noreferrer">http://support.microsoft.com/kb/278835</a></p>
                 </li>
                 <li>
                     <p>For the Firefox web browser, please visit this page from Mozilla: <a
                         href="https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored"
-                        rel="external nofollow noopener"
-                        rel="noreferrer">https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored</a></p>
+                        rel="external nofollow noopener noreferrer">https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored</a></p>
                 </li>
                 <li>
                     <p>For the Safari web browser, please visit this page from Apple: <a
                         href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac"
-                        rel="external nofollow noopener"
-                        rel="noreferrer">https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac</a>
+                        rel="external nofollow noopener noreferrer">https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac</a>
                     </p>
                 </li>
             </ul>
@@ -95,8 +94,8 @@ export default function cookiePolicy() {
             <p>If you have any questions about this Cookies Policy, You can contact us:</p>
             <ul>
                 <li>By visiting this page on our website: <a href="https://fondaciakosmosdb.com/contacts"
-                    rel="external nofollow noopener" rel="noreferrer">https://fondaciakosmosdb.com/contacts</a></li>
+                    rel="external nofollow noopener noreferrer">https://fondaciakosmosdb.com/contacts</a></li>
             </ul>
-        </>
+        </article>
     )
 }
