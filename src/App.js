@@ -33,19 +33,11 @@ function App() {
       </Switch>
       <Footer />
       <CookieConsent
-        onAccept={() => {
-
-        }}
+        // onAccept={() => {
+        // }}
         debug={true}
-
-        onDecline={() => {
-          alert("не!");
-        }}
       >
         Този сайт използва „бисквитки“, за да ви предостави по-добри услуги. <Link to="/cookie">Cookie Policy</Link>{" "}
-        <span style={{ fontSize: "10px" }}>
-
-        </span>
       </CookieConsent>
     </div>
   );
