@@ -347,7 +347,25 @@ body {
     }
 }
 /*End Poets*/
+/*cookie policy*/
+.cookie-policy {
+    padding: 1rem;
+    font-size: 1.2rem;
+    h1,
+    h2 {
+        padding: 1rem 0;
+    }
+    ul li {
+        a {
+            text-decoration: none;
+        }
+        a:visited {
+            color: blue;
+        }
+    }
+}
 
+/*end cookie policy*/
 /*Footer*/
 .footer-container {
     margin-top: 5rem;
