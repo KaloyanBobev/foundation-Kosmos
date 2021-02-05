@@ -42,7 +42,7 @@ function App() {
           alert("не!");
         }}
       >
-        This website uses cookies to enhance the user experience. <Link to="/cookie">Cookie Policy</Link>{" "}
+        Този сайт използва „бисквитки“, за да ви предостави по-добри услуги. <Link to="/cookie">Cookie Policy</Link>{" "}
         <span style={{ fontSize: "10px" }}>
 
         </span>
