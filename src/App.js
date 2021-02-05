@@ -37,13 +37,12 @@ function App() {
 
         }}
         debug={true}
-        enableDeclineButton
-        declineButtonText="Откажи(optional)"
+
         onDecline={() => {
           alert("не!");
         }}
       >
-        This website uses cookies to enhance the user experience.<Link to="/cookie">Cookie Policy</Link>{" "}
+        This website uses cookies to enhance the user experience. <Link to="/cookie">Cookie Policy</Link>{" "}
         <span style={{ fontSize: "10px" }}>
 
         </span>
