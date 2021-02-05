@@ -30,7 +30,8 @@ export default class About extends React.Component {
         return (
             <>
                 <section className={this.state.visible ? "container" : "container show"}>
-                    <h1>Димитър Брацов препуска със свещения дар на спомените</h1>
+                    <h1>Учредиха клуб “Космос” в резиденция “Змейово”</h1>
+
                     <Container data={this.state.data} />
                 </section>
                 <ToggleBtn
