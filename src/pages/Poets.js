@@ -6,7 +6,7 @@ export default class Poets extends Component {
     render() {
         return (
             <section className="poets-container">
-                <h1>Учередяване на дружеството на писателите</h1>
+                <h1>Учредяване на дружеството на писателите</h1>
 
                 <a href={img} className="image-container">
                     <img src={img} alt="esteblishment" ></img>
