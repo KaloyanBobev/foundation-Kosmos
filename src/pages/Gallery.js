@@ -16,17 +16,17 @@ export default class Gallery extends Component {
                 <h1>Фото галерия</h1>
                 <a href={img4}
                     target="_blank" rel="noreferrer">
-                    <img src={img4} alt="cosmos" />
+                    <img className="img" src={img4} alt="cosmos" />
                 </a>
                 <a href={img2}
                     target="_blank" rel="noreferrer">
-                    <img src={img2} alt="cosmos" />
+                    <img className="img" src={img2} alt="cosmos" />
                 </a>
-                <a href={img5} target="_blank" rel="noreferrer"><img src={img5} alt="cosmos" /></a>
-                <a href={img6} target="_blank" rel="noreferrer"><img src={img6} alt="cosmos" /></a>
-                <a href={img3} target="_blank" rel="noreferrer"><img src={img3} alt="cosmos" /></a>
-                <a href={img7} target="_blank" rel="noreferrer"><img src={img7} alt="cosmos" /></a>
-                <a href={img1} target="_blank" rel="noreferrer"><img src={img1} alt="cosmos" /></a>
+                <a href={img5} target="_blank" rel="noreferrer"><img className="img" src={img5} alt="cosmos" /></a>
+                <a href={img6} target="_blank" rel="noreferrer"><img className="img" src={img6} alt="cosmos" /></a>
+                <a href={img3} target="_blank" rel="noreferrer"><img className="img" src={img3} alt="cosmos" /></a>
+                <a href={img7} target="_blank" rel="noreferrer"><img className="img" src={img7} alt="cosmos" /></a>
+                <a href={img1} target="_blank" rel="noreferrer"><img className="img" src={img1} alt="cosmos" /></a>
             </section>
         )
     }
