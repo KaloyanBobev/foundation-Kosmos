@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function Container({ data }) {
     return (
         <>
@@ -8,9 +9,9 @@ export default function Container({ data }) {
                     <p key={item.sys.id}>
                         {item.fields.text}
                     </p>
+
                 )
             })}
-
         </>
     )
 }
