@@ -11,7 +11,8 @@ $mainWhite: #fff;
 $offWhite: #f7f7f7;
 $mainBlack: #222;
 $mainGrey: #ececec;
-$darkGrey: #cfcfcf;
+$darkGrey: #47175e;
+$linksColor: rgb(40, 127, 156);
 $mainTransition: all 0.3s linear;
 $mainSpacing: 3px;
 $lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
@@ -58,6 +59,10 @@ body {
     }
 }
 
+.link {
+    color: $linksColor;
+    text-decoration: none;
+}
 @media screen and(min-width:$mediawidth) {
     .img {
         margin: 5rem 5rem 5rem 2rem;
@@ -371,6 +376,7 @@ body {
     }
 }
 /*End Poets*/
+
 /*cookie policy*/
 .cookie-policy {
     padding: 1rem;
@@ -378,14 +384,6 @@ body {
     h1,
     h2 {
         padding: 1rem 0;
-    }
-    ul li {
-        a {
-            text-decoration: none;
-        }
-        a:visited {
-            color: blue;
-        }
     }
 }
 
