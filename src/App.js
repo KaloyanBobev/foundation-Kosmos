@@ -37,7 +37,8 @@ function App() {
         // }}
         debug={true}
       >
-        Този сайт използва „бисквитки“, за да ви предостави по-добри услуги. <Link to="/cookie">Cookie Policy</Link>{" "}
+        Този сайт използва „бисквитки“, за да ви предостави по-добри услуги.
+        <Link className="link" to="/cookie">Cookie Policy</Link>
       </CookieConsent>
     </div>
   );
