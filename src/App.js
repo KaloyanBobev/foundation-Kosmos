@@ -35,10 +35,9 @@ function App() {
       <CookieConsent
         // onAccept={() => {
         // }}
-        debug={true}
-      >
+        debug={true} >
         Този сайт използва „бисквитки“, за да ви предостави по-добри услуги.
-        <Link className="link" to="/cookie">Cookie Policy</Link>
+        <Link className="link" to="/cookie"> Cookie Policy</Link>
       </CookieConsent>
     </div>
   );
