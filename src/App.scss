@@ -300,8 +300,18 @@ body {
 /*Contacts*/
 
 .contacts-container {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin: 3rem;
+    h1,
+    h3 {
+        border-bottom: 5px outset black;
+        margin: 2rem auto;
+    }
+}
+@media screen and(min-width:$mediawidth) {
+    .contacts-container {
+        font-size: 1.5rem;
+    }
 }
 
 /*End Contacts*/
