@@ -244,8 +244,9 @@ body {
 
 .btn {
     font-weight: 900;
-    padding: 2rem auto;
-    color: $primaryColor;
+    font-size: 0.9rem;
+    padding: 1rem;
+    color: $linksColor;
     outline: none;
     &:hover {
         color: $darkGrey;
@@ -266,6 +267,9 @@ body {
             padding: 1rem 30%;
             font-size: 1.7rem;
         }
+    }
+    .btn {
+        font-size: 1.1rem;
     }
 }
 
