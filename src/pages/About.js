@@ -46,8 +46,7 @@ export default class About extends React.Component {
                 </section>
                 <ToggleBtn
                     handleToggle={this.handleToggle1}
-                    visible={this.state.visible1}
-                />
+                    visible={this.state.visible1} />
 
                 <section className={this.state.visible2 ? "container" : "container show"}>
                     <div>
