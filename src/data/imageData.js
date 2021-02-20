@@ -16,7 +16,7 @@ export default [
         },
         fields: {
             name: "one",
-            image: img1
+            src: img1
         }
     }, {
         sys: {
@@ -25,7 +25,7 @@ export default [
         },
         fields: {
             name: "Dimitar-Bracov",
-            text: img2
+            src: img2
         }
     },
     {
@@ -35,7 +35,7 @@ export default [
         },
         fields: {
             name: "hristo-tanev",
-            text: img3
+            src: img3
         }
     },
     {
@@ -45,7 +45,7 @@ export default [
         },
         fields: {
             name: "Jordan-Atanasov",
-            text: img4
+            src: img4
         }
     },
     {
@@ -55,7 +55,7 @@ export default [
         },
         fields: {
             name: "korica-ptici-v-noshta1",
-            text: img5
+            src: img5
         }
     },
     {
@@ -65,7 +65,7 @@ export default [
         },
         fields: {
             name: "Liliev-konkurs",
-            text: img6
+            src: img6
         }
     },
     {
@@ -75,7 +75,7 @@ export default [
         },
         fields: {
             name: "uchrediteli-klub-Kosmos",
-            text: img7
+            src: img7
         }
     }
 ]
