@@ -285,6 +285,9 @@ body {
         margin: 1rem 4rem;
         font-size: 1.5rem;
     }
+    a {
+        border: 1px solid red;
+    }
 }
 
 @media screen and(min-width:$mediawidth) {
