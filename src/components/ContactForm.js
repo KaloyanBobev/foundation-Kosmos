@@ -11,7 +11,7 @@ export default class ContactForm extends Component {
             message: ''
         }
 
-        this.onEmailSubmit = this.onEmailSubmit.bind(this);
+        this.submitEmail = this.submitEmail.bind(this);
         this.onNameChange = this.onNameChange.bind(this);
         this.onEmailChange = this.onEmailChange.bind(this);
         this.onSubjectChange = this.onSubjectChange.bind(this);
@@ -19,30 +19,7 @@ export default class ContactForm extends Component {
     }
 
 
-    onEmailSubmit(e) {
-        e.preventDefault();
-        axios({
-            method: "POST",
-            url: "/send",
-            data: this.state
-        }).then((response) => {
-            if (response.data.status === "success") {
-                alert('Message send');
-                this.resetForm();
-            } else if (response.data.status === "fail") {
-                alert("Message fail");
-            }
-        })
-    }
 
-    resetForm() {
-        this.setState({
-            name: '',
-            email: '',
-            subject: '',
-            message: ''
-        })
-    }
 
     onNameChange(event) {
         this.setState({ name: event.target.value })
@@ -60,11 +37,36 @@ export default class ContactForm extends Component {
         this.setState({ message: event.target.value })
     }
 
+    submitEmail(e) {
+        e.preventDefault();
+        axios({
+            method: "POST",
+            url: "/send",
+            data: this.state
+        }).then((response) => {
+            if (response.data.status === 'success') {
+                alert("Message Sent.");
+                this.resetForm()
+            } else if (response.data.status === 'fail') {
+                alert("Message failed to send.")
+            }
+        })
+    }
+
+    resetForm() {
+        this.setState({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+        })
+    }
+
     render() {
         return (
             <section className="contact-form-container">
                 <p>Може да се свържете с нас  и с контактната форма</p>
-                <form id="contact-form" onSubmit={this.onEmailSubmit} method="POST">
+                <form id="contact-form" onSubmit={this.submitEmail} method="POST">
                     <input
                         type="text"
                         placeholder="Name"
