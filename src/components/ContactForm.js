@@ -20,17 +20,23 @@ export default class ContactForm extends Component {
     render() {
         return (
             <div>
-                <Field onChange={(event) => this.updateField('name', event.target.value)}
+                <Field
+                    label={"Name"}
+                    onChange={(event) => this.updateField('name', event.target.value)}
                     value={this.state.name} />
-                <Field onChange={(event) => this.updateField('email', event.target.value)}
+                <Field
+                    label={"Email"}
+                    onChange={(event) => this.updateField('email', event.target.value)}
                     value={this.state.email} />
                 <Field
+                    label={"Message"}
                     onChange={(event) => this.updateField('message', event.target.value)}
                     textarea={true}
                     value={this.state.message} />
                 <Button
 
-                    email="kaloyanbodev@gmail.com"
+                    email="canoncop2@abv.bg"
+                    obfuscate={true}
                     formValues={this.state}
                 />
 
