@@ -17,6 +17,7 @@ class Button extends React.Component {
         this.state = {
             isClicked: false
         }
+        this.logFormDataToConsole = this.logFormDataToConsole.bind(this);
     }
 
     logFormDataToConsole(event) {
@@ -28,6 +29,7 @@ class Button extends React.Component {
         const body = `&body=${this.props.formValues.message}`;
         return (
             <a
+                className="btn btn-primary"
                 href={`${recepient}${subject}${body}`}
                 onClick={this.logFormDataToConsole}
             >
