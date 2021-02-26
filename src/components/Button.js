@@ -20,24 +20,25 @@ class Button extends React.Component {
         this.logFormDataToConsole = this.logFormDataToConsole.bind(this);
     }
 
-    logFormDataToConsole(event) {
+    logFormDataToConsole() {
         console.log('Form Values', this.props.formValues)
         this.setState({ isClicked: true });
     }
     render() {
         const recepient = `mailto:${this.props.email}`;
-        const subject = `?subject=Interested%20Client`;
+        const subject = `?subject=Contact%20Form%20Fondacia%20Kosmos`;
         const body = `&body=${this.props.formValues.message}`;
         return (
-            <button
-                className="btn btn-primary"
-            >
-                <a
-                    href={`${recepient}${subject}${body}`}
-                    disabled={this.state.isClicked}
-                    onClick={this.logFormDataToConsole}>Contact us</a>
 
-            </button>
+            <a href={`${recepient}${subject}${body}`} >
+                <button
+                    className="btn btn-primary"
+                    disabled={this.state.isClicked}
+                    onClick={this.logFormDataToConsole}>
+                    Contact us
+                </button>
+            </a>
+
         )
     }
 }
