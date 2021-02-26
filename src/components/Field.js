@@ -6,9 +6,13 @@ const Field = (props) => {
     return (
         <div>
             <label>{props.label}</label>
-            <input type={props.textarea ? 'textarea' : 'text'}
+            <input
+                placeholder={props.placeholder}
+                className={props.class}
+                type={props.textarea ? 'textarea' : 'text'}
                 onChange={props.onChange}
                 value={props.value}
+                required
             />
         </div>
     )
