@@ -285,9 +285,6 @@ body {
         margin: 1rem 4rem;
         font-size: 1.5rem;
     }
-    // a {
-    //     border: 1px solid red;
-    // }
 }
 
 @media screen and(min-width:$mediawidth) {
@@ -314,13 +311,48 @@ body {
     .contact-form-container {
         display: flex;
         flex-direction: column;
-        width: 20rem;
-        margin: 1rem;
+        margin: 2rem 1rem;
+
+        div {
+            width: 20rem;
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+            input {
+                border: outset;
+                outline: none;
+                border-radius: 5px;
+                font-weight: 900;
+            }
+            label {
+                color: $linksColor;
+                text-transform: uppercase;
+            }
+            .field {
+                margin-left: 2rem;
+                width: 70%;
+            }
+            .message {
+                width: 70%;
+            }
+        }
+        a {
+            width: fit-content;
+            .btn:disabled {
+                color: gray;
+                cursor: not-allowed;
+            }
+        }
     }
 }
 @media screen and(min-width:$mediawidth) {
     .contacts-container {
         font-size: 1.5rem;
+        .contact-form-container {
+            div {
+                width: 35rem;
+            }
+        }
     }
 }
 
