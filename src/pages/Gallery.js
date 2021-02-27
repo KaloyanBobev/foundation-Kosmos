@@ -7,7 +7,6 @@ export default class Gallery extends Component {
             <section className="image-container">
                 <h1>Фото галерия</h1>
                 <Image data={imageData} />
-
             </section>
         )
     }
