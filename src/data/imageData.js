@@ -4,7 +4,7 @@ import img2 from '../images/cosmos/Dimitar-Bracov.jpg';
 import img3 from '../images/cosmos/hristo-tanev-01-07-16-4.jpg';
 import img4 from '../images/cosmos/Jordan-Atanasov1.jpg';
 import img5 from '../images/cosmos/korica-ptici-v-noshta1-190x122.jpg';
-import img6 from '../images/cosmos/Liliev-konkurs-05-25-15-190x122.jpg';
+import img6 from '../images/cosmos/Liliev.jpg';
 import img7 from '../images/cosmos/uchrediteli-klub-Kosmos-23-13.jpg';
 
 // eslint-disable-next-line
