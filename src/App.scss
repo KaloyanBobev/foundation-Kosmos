@@ -285,6 +285,17 @@ body {
         margin: 1rem 4rem;
         font-size: 1.5rem;
     }
+    span {
+        display: inline-block;
+        margin: 2rem;
+        a {
+            width: fit-content;
+
+            img {
+                margin: 0;
+            }
+        }
+    }
 }
 
 @media screen and(min-width:$mediawidth) {
