@@ -47,7 +47,6 @@ export default class ContactForm extends Component {
                     obfuscate={true}
                     formValues={this.state}
                 />
-
             </div>
         )
     }
