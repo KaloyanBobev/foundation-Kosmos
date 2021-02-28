@@ -9,7 +9,7 @@ export default class Image extends Component {
                 {this.props.data.map((image) => {
                     return (
                         <span key={image.sys.id}>
-                            <a
+                            <a className="btn"
                                 href={image.fields.src}
                                 target="_blank" rel="noreferrer">
                                 <img
