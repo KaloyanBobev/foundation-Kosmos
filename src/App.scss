@@ -219,8 +219,11 @@ body {
     }
     div,
     ul {
-        margin: auto;
+        margin-left: auto;
         padding: 1rem;
+        li {
+            list-style: none;
+        }
     }
     img {
         float: left;
@@ -267,6 +270,9 @@ body {
         font-size: 1.5rem;
         h1 {
             font-size: 2rem;
+        }
+        ul {
+            margin-left: 10rem;
         }
         pre {
             padding: 1rem 30%;
