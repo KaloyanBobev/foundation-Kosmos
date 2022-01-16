@@ -7,7 +7,9 @@ import ToggleBtn from '../components/ToggleBtn';
 //import imageData from '../data/imageData';
 //import Client from '../contentful';
 import img1 from "../images/MADJARSKI  SNIMKA.jpg";
+import img2 from "../images/karzis1.pdf";
 import img2 from "../images/karzis2.pdf";
+import img2 from "../images/karzis3.pdf";
 
 export default class Home extends Component {
     constructor() {
@@ -73,6 +75,8 @@ export default class Home extends Component {
                     </div>
                     <img src={img1} alt="Logo" />
                     <img src={img2} alt="Logo" />
+                    <img src={img3} alt="Logo" />
+                    <img src={img4} alt="Logo" />
 
                 </section>
                 <ToggleBtn
