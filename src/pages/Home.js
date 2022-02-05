@@ -8,9 +8,11 @@ import ToggleBtn from '../components/ToggleBtn';
 //import imageData from '../data/imageData';
 //import Client from '../contentful';
 import img1 from "../images/MADJARSKI  SNIMKA.jpg";
+
 import img2 from "../images/katarzis1.pdf";
 import img3 from "../images/katarzis2.pdf";
 import img4 from "../images/katarzis3.pdf";
+
 
 export default class Home extends Component {
     constructor() {
@@ -75,7 +77,7 @@ export default class Home extends Component {
                         (2013) и др. Превежда и от френски език. Живееше в с. Казанка, община Стара Загора.
                     </div>
                     <img src={img1} alt="Logo" />
-                   
+                  
                  
                      
                     <pre> I. КАТАРЗИС <br></br>
