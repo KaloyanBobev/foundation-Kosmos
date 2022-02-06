@@ -9,10 +9,6 @@ import ToggleBtn from '../components/ToggleBtn';
 //import Client from '../contentful';
 import img1 from "../images/MADJARSKI  SNIMKA.jpg";
 
-import img2 from "../images/katarzis1.pdf";
-import img3 from "../images/katarzis2.pdf";
-import img4 from "../images/katarzis3.pdf";
-
 
 export default class Home extends Component {
     constructor() {
@@ -86,7 +82,7 @@ export default class Home extends Component {
                     Пътуват, топят се бавно снеговете и годините!<br></br>
                     По стъпките на Времето бели облаци летят, <br></br>
                     отмерват крачки барабаните.<br></br>
-                    Отиват си след тях – по пътя звезден към могили<br></br>те<br></br>
+                    Отиват си след тях – по пътя звезден към могилите<br></br>
                     Господата и Другарите, – от Бога най-избраните.<br></br>
                     Заспиват Дните, задрямали в чакалните на Гарите<br></br>
                     в очакване на пореден безнадежден черен Влак!<br></br>
@@ -130,7 +126,7 @@ export default class Home extends Component {
                     Теб да дири високо горе нейде в Синевата!<br></br>
                     Нощта отново в Ято Птиците събира!<br></br>
                     Сама самичка и Тя ще плаче в Самота.<br></br>
-                    И плаках аз на тъмно, заедно с Дъжда, 
+                    И плаках аз на тъмно, заедно с Дъжда, <br></br>
                     когато Ти си тръгна много тъжен от Света!<br></br>
                     Ще те сънуват в огън всички мои Сетива, <br></br>
                     теб Единствен и след Теб, - усмивката игрива <br></br>
