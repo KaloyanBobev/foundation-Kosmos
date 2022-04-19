@@ -58,7 +58,19 @@ body {
         box-shadow: 5px 5px 5px $mainBlack;
     }
 }
-
+.big-picture{
+    margin: 2rem 2rem 2rem 1rem;
+    padding: auto;
+    width: 40rem;
+    border: 5px solid darkGrey;
+    border-radius: 15px 15px;
+    box-shadow: 3px 3px 3px $mainBlack;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+        box-shadow: 5px 5px 5px $mainBlack;
+    }  
+}
 .link {
     color: $linksColor;
     text-decoration: none;
