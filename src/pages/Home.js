@@ -59,7 +59,9 @@ export default class Home extends Component {
         return (
             <>
                 <section className={this.state.visible ? "container" : "container show"}>
-                   <img src={img2} class="img img-center"alt='Easter one'/>
+                   
+                        <img src={img2} class="img img-center"alt='Easter one'/>
+                  
                     <h1 className='center'>ВЕЛИКДЕНСКИ ПОСТИ...</h1>
                     <h2 className='center'>/Христос ли воскресе.../</h2>
                    <pre>
@@ -71,7 +73,7 @@ export default class Home extends Component {
                     Д. Брацов <br></br><br></br>
                    </div>
 
-                   <i>
+                   <p className='italic'>
                    Боже мой, в Светлината на празника теб ще помоля:-<br></br> 
                     От небето високо тихо да слезеш, <br></br>
                     за малко да спреш пред църковните порти, <br></br>
@@ -104,10 +106,9 @@ export default class Home extends Component {
                     за кой ли път и отново, пак ще възкръсне. <br></br>
 
                     25.04.2013 г.<br></br>
-                   </i>
+                    </p>
                     
-
-                   </pre>
+                  </pre>
                    <img src={img3} class="img img-center"alt='Easter two'/>
                    
                    
