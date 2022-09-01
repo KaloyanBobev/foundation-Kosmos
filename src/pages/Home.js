@@ -59,9 +59,9 @@ export default class Home extends Component {
         return (
             <>
                 <section className={this.state.visible ? "container" : "container show"}>
-                   
+
                         <img src={img2} class="img img-center"alt='Easter one'/>
-                  
+
                     <h1 className='center'>ВЕЛИКДЕНСКИ ПОСТИ...</h1>
                     <h2 className='center'>/Христос ли воскресе.../</h2>
                    <pre>
@@ -74,11 +74,11 @@ export default class Home extends Component {
                    </div>
 
                    <p className='italic'>
-                   Боже мой, в Светлината на празника теб ще помоля:-<br></br> 
+                   Боже мой, в Светлината на празника теб ще помоля:-<br></br>
                     От небето високо тихо да слезеш, <br></br>
                     за малко да спреш пред църковните порти, <br></br>
                     да видиш тук на Земята, дали по Небесната Воля <br></br>
-                    до болка, от глад посиняват ръцете на хиляди смъртни.<br></br> 
+                    до болка, от глад посиняват ръцете на хиляди смъртни.<br></br>
 
                     Паричката, твоята древна монета не искам за мене. <br></br>
                     Ти за мен си и Бог и свидетел, <br></br>
@@ -107,11 +107,11 @@ export default class Home extends Component {
 
                     25.04.2013 г.<br></br>
                     </p>
-                    
+
                   </pre>
                    <img src={img3} class="img img-center"alt='Easter two'/>
-                   
-                   
+
+
                     <h1 className="center">ЗА ПОСЛЕДНО СБОГОМ…
                     </h1>
                     <div>
@@ -128,9 +128,9 @@ export default class Home extends Component {
                         (2013) и др. Превежда и от френски език. Живееше в с. Казанка, община Стара Загора.
                     </div>
                     <img src={img1} className="img img-center" alt="Logo" />
-                  
-                 
-                     
+
+
+
                     <pre> I. КАТАРЗИС <br></br>
                     (С дълбока скръб споделям<br></br>
                     спомен скъп за Стойчо Маджарски)<br></br>
@@ -166,7 +166,7 @@ export default class Home extends Component {
                     Интелектуален елит на Стара Загора<br></br>
                     4 януари 2022 г.<br></br>
                     Стара Загора, Резиденция „Змейово“                    </pre>
-                    
+
                     <pre>
                     II. НА ПРОЩАВАНЕ<br></br>
                     В памят на Стойчо Маджарски -<br></br>
@@ -225,16 +225,35 @@ export default class Home extends Component {
                     4 януари 2022 г.<br></br>
                     Стара Загора, Резиденция „Змейово                </pre>
 
-                       
-                    
+
+
                 </section>
                 <ToggleBtn
                     handleToggle={this.handleToggle}
                     visible={this.state.visible}
                 />
+
+<section className={this.state.visible ? "container" : "container show"}>
+
+
+
+               <h1 className='center'>ВЕЛИКДЕНСКИ ПОСТИ...</h1>
+               <h2 className='center'>/Христос ли воскресе.../</h2>
+              <pre>
+                        <div>
+
+TEXT
+                        </div>
+              </pre>
+
+
+
+           </section>
+           <ToggleBtn
+               handleToggle={this.handleToggle}
+               visible={this.state.visible}
+           />
             </>
         )
     }
 }
-
-
