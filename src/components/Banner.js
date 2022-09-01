@@ -9,12 +9,13 @@ export default class Banner extends Component {
                 <div className="banner-container">
                     <div className="banner-center">
                         <div className="banner-text banner-size">
-                            <h1>Фондация Космос</h1>
-                            <h3>Димитър Брацов</h3>
-                            <Link className="btn-primary" to="/">Начало</Link>
+                            <Link className="btn-primary" to="/">File 1</Link>
+                            <Link className="btn-primary" to="/">File 2</Link>
+                            <Link className="btn-primary" to="/">File 3</Link>
                         </div>
-
                     </div>
+
+
                     <div className="banner-size">
                         <Link to="/books">
                             <img src={img} alt="first page" />
