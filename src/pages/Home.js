@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import ReactReadLessMore from 'react-read-less-more';
 
-import { FaAngleDoubleDown } from 'react-icons/fa';
-import { FaAngleDoubleUp } from 'react-icons/fa';
+// import { FaAngleDoubleDown } from 'react-icons/fa';
+// import { FaAngleDoubleUp } from 'react-icons/fa';
 import homeData from '../data/homeData';
 //import Container from '../components/Container';
-import ToggleBtn from '../components/ToggleBtn';
 //import Image from '../components/Image.js';
 //import imageData from '../data/imageData';
 //import Client from '../contentful';
@@ -59,9 +58,10 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div className='center'>
+            <div className='container'>
 
-                    <ReactReadLessMore  lessText="Скрий" moreText="Покажи" displayCount={2} >
+                <div className='border'>
+                <ReactReadLessMore  lessText="Скрий" moreText="Покажи" displayCount={2} >
             <span >
                     <h1 >ВЕЛИКДЕНСКИ ПОСТИ...</h1>
             </span>
@@ -232,7 +232,9 @@ export default class Home extends Component {
                     Стара Загора, Резиденция „Змейово                </pre>
             </span>
         </ReactReadLessMore>
-        <br/>
+                    </div>
+                <br />
+                <div className='border'>
                 <ReactReadLessMore  lessText="Скрий" moreText="Покажи" displayCount={2} >
             <span>
             <h1 className='center'>НАПРАВЛЕНИЯ ЗА 2022 ГОДИНА</h1>
@@ -385,8 +387,11 @@ export default class Home extends Component {
 
                     </div>
             </span>
-        </ReactReadLessMore>
-        <br/>
+                </ReactReadLessMore>
+                </div>
+                <br />
+
+                <div className='border'>
                 <ReactReadLessMore lessText="Скрий" moreText="Покажи" displayCount={2} >
                     <span>
                         <h1>Фондация „КОСМОС – Димитър Брацов“  Стара Загора</h1>
@@ -580,8 +585,10 @@ VII  ПРОЕКТ:  <br/><br/>
 Приложение - ПРОЕКТ 2022 година<br/>
 
             </span>
-         </ReactReadLessMore>
-         <br/>
+                    </ReactReadLessMore>
+                    </div>
+                <br />
+                <div className='border'>
          <ReactReadLessMore lessText="Скрий" moreText="Покажи" displayCount={2} >
             <span><h1>Фондация „КОСМОС – Димитър Брацов“  Стара Загора</h1></span>
             <span>Кадрови състав (меценати + съучредители + почетни членове) :<br/><br/> </span>
@@ -966,7 +973,8 @@ III. Почетни членове		61		<br/>
 Президент на Фондацията: Димитър Брацов<br/>
 
             </span>
-        </ReactReadLessMore>
+                    </ReactReadLessMore>
+                    </div>
             </div>
         )
     }
