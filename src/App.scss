@@ -246,11 +246,13 @@ body {
         }
     }
     .img-center{
+        display: block;
         margin-left: auto;
         margin-right: auto;
+
     }
     img {
-        float: right;
+
         padding: 0;
         margin: 1rem 4rem;
     }
@@ -261,8 +263,9 @@ body {
         text-indent: 2em;
         text-align: justify;
     }
-    .border{
+    div.border{
         border: 5px solid $mainBlack;
+        margin-left: 0;
     }
     .center {
         text-align: center;
