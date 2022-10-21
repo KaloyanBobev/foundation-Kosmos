@@ -264,8 +264,9 @@ body {
         text-align: justify;
     }
     div.border{
-        border: 5px solid $mainBlack;
-        margin-left: 0;
+        border: 15px double $mainBlack;
+        border-radius: 2rem;
+        margin:2rem;
     }
     .center {
         text-align: center;
