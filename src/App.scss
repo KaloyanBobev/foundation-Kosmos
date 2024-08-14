@@ -276,7 +276,9 @@ body {
     }
     pre {
         padding: 1rem;
-        font-size: 0.65rem;
+        font-size: 1rem;
+        overflow-wrap: break-word;
+        text-align: left;
         div{
             text-align: right;
             font-weight: 900;
